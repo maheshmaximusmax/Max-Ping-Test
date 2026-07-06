@@ -1,265 +1,268 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/maheshmaximusmax/max-ping-test/main/assets/logo.png" width="96" alt="Max Ping Test Logo">
-
+<img src="assets/logo.png" width="88" alt="Max Ping Test">
 
 # Max Ping Test
 
-**Bulk IP Ping Tester & Network Monitor for Windows**
+**Bulk IP Ping Tester & Uptime Monitor for Windows**
 
-[![Windows](https://img.shields.io/badge/Platform-Windows-blue?logo=windows)](https://github.com/maheshmaximusmax/max-ping-test/releases)
-[![Download](https://img.shields.io/github/downloads/maheshmaximusmax/max-ping-test/total?label=Downloads&color=purple)](https://github.com/maheshmaximusmax/max-ping-test/releases)
-[![Latest Release](https://img.shields.io/github/v/release/maheshmaximusmax/max-ping-test?color=green)](https://github.com/maheshmaximusmax/max-ping-test/releases/latest)
-[![License](https://img.shields.io/badge/License-Free-brightgreen)](LICENSE)
+[![Windows](https://img.shields.io/badge/Platform-Windows%2010%2F11-0078D4?logo=windows&logoColor=white)](https://github.com/maheshmaximusmax/max-ping-test/releases)
+[![Download](https://img.shields.io/github/downloads/maheshmaximusmax/max-ping-test/total?label=Total%20Downloads&color=7c3aed)](https://github.com/maheshmaximusmax/max-ping-test/releases)
+[![Release](https://img.shields.io/github/v/release/maheshmaximusmax/max-ping-test?color=22c55e&label=Latest)](https://github.com/maheshmaximusmax/max-ping-test/releases/latest)
+[![Free](https://img.shields.io/badge/Price-Free-brightgreen)](https://github.com/maheshmaximusmax/max-ping-test/releases/latest)
+[![No Install](https://img.shields.io/badge/Install-None%20Required-orange)](https://github.com/maheshmaximusmax/max-ping-test/releases/latest)
 
-**Upload a CSV or Excel sheet → instantly ping all IPs → live green/red status table.**
-Built for industrial networks: energy meters, PLCs, HMIs, IoT gateways, SCADA sites.
+**Upload a CSV or Excel sheet → auto-detect all IPs → real-time green/red ping status.**  
+One `.exe` file. No Python. No install. Works on any Windows PC.
 
-[⬇️ Download .exe](https://github.com/maheshmaximusmax/max-ping-test/releases/latest) · [📸 Screenshots](#screenshots) · [⚡ Quick Start](#quick-start) · [✨ Features](#features)
+[⬇️ **Download .exe**](https://github.com/maheshmaximusmax/max-ping-test/releases/latest) &nbsp;·&nbsp; [📸 Screenshots](#screenshots) &nbsp;·&nbsp; [⚡ Quick Start](#quick-start) &nbsp;·&nbsp; [✨ Features](#features) &nbsp;·&nbsp; [❓ FAQ](#faq)
 
 </div>
 
 ---
 
-## What is Max Ping Test?
+## Screenshots
 
-Max Ping Test is a **free, single-file Windows app** for bulk IP ping monitoring.
-You upload your IP list (CSV or Excel), and it pings all of them in parallel — showing live **green = online / red = offline** status with real latency, uptime duration, and full history.
+### Login Screen
+![Login Screen](assets/screenshot-login.png)
 
-No Python. No installation. No command line. Just one `.exe` that runs anywhere.
-
-Designed for network engineers, automation engineers, and SCADA operators who need to monitor **dozens to hundreds of devices** across multiple sites — energy meters, PLCs, HMIs, IoT gateways, routers, cameras — from a single dashboard.
+### Live Dashboard — 114 Online · 102 Offline · 216 Devices · Real-time
+![Dashboard](assets/screenshot-dashboard.png)
 
 ---
 
-## Screenshots
+## What Is Max Ping Test?
 
-> *(Add your screenshots to the `assets/` folder and they appear here automatically)*
+Max Ping Test is a **free single-file Windows app** for bulk IP ping monitoring.
 
-| Dashboard | Login | Admin Panel |
-|---|---|---|
-| ![Dashboard](assets/screenshot-dashboard.png) | ![Login](assets/screenshot-login.png) | ![Admin](assets/screenshot-admin.png) |
+Upload your IP address list (CSV or Excel in any layout), and it pings **all of them in parallel** — showing a live table with:
+- 🟢 **Green = Online** (with real latency in ms)
+- 🔴 **Red = Offline** (with how long it has been down)
+- 📅 Full uptime/downtime history saved to disk
 
-**114 online · 102 offline · 216 total — live, every 6 seconds.**
+Built for **network engineers, automation engineers, and SCADA operators** who monitor dozens to hundreds of devices — energy meters, PLCs, HMIs, IoT gateways, routers — across multiple industrial sites.
+
+> No Python. No .NET. No install. One `.exe` that runs on any Windows PC.
 
 ---
 
 ## Quick Start
 
-### Option A — Just run the exe (no install needed)
+### 1. Download
+Go to [**Releases**](https://github.com/maheshmaximusmax/max-ping-test/releases/latest) and download `Max Ping Test.exe`
 
-1. Go to [**Releases**](https://github.com/maheshmaximusmax/max-ping-test/releases/latest)
-2. Download `Max Ping Test.exe`
-3. Double-click it → browser opens → log in → upload your IP sheet → done
+### 2. Run
+Double-click the exe. Your browser opens automatically to the login page.
 
-**Nothing else to install. Works on any Windows PC.**
+### 3. Log in
+Use your credentials. First-time users: click **Create an account**.
 
-### Option B — Add a desktop icon (optional)
+### 4. Upload & Monitor
+Click **Choose File**, select your CSV or Excel IP list, click **Upload & Monitor**.  
+The app auto-detects every IP address and starts pinging immediately.
 
-Download the full release zip, extract it, and run `install.bat`.
-This adds **Max Ping Test** to your Desktop and Start Menu with the logo icon.
+### Optional: Desktop Icon
+Download the full release zip, extract, run `install.bat` → adds **Max Ping Test** to your Desktop and Start Menu.
 
 ---
 
 ## Features
 
-### 📋 Upload Any IP Sheet — No Formatting Required
-- Upload **CSV or Excel** files in any layout (multi-table, multi-site, messy headers)
-- Auto-detects every IPv4 address and its Site Name from your existing sheet
-- Works with **energy meter sheets, PLC lists, IoT gateway tables, SCADA device lists**
-- No column renaming. No templates. Upload as-is.
+### 📋 Upload Any IP Sheet — No Reformatting Needed
+Upload **CSV or Excel** files in any layout — messy headers, multi-table, multi-site.  
+The app scans every cell and extracts all IPv4 addresses along with their Site Names automatically.
+
+Works with:
+- Energy meter sheets with multiple blocks (WD1/WD2/WD3/WD4)
+- PLC and HMI device lists
+- IoT gateway tables
+- SCADA site inventories
+- Google Sheets exports (File → Download → CSV)
 
 ### 🟢 Real ICMP Ping — No False Results
-- Uses **TTL-based detection**: a host is UP only if the ping reply contains `TTL=`
-- Router "Destination host unreachable" replies are correctly shown as **DOWN**
-- Latency is the real reply time (not the timeout wait)
-- Parallel pinging (up to 60 simultaneous) with configurable retries
+A host is marked **UP only if the ping reply contains `TTL=`**.  
+This means a router's *"Destination host unreachable"* reply is correctly shown as **DOWN** — a common source of false positives in other tools.
 
-### 📊 Uptime / Downtime History
-- **Since** — exact date & time the current status started
-- **Duration** — how long in current state (e.g., `3d 04:12:07`)
-- **Last Online** / **Last Offline** — full timestamps
-- History is **saved to disk** and survives app restarts
+Real latency shown (0.5ms–100ms typical on LAN). Offline hosts show `—`.
 
-### ✏️ Edit Inline — No Spreadsheet Needed
-- Click any Site or IP cell to edit it directly in the table
-- **Ctrl+S** or "Save setup" button to save the current list as a named setup
-- Add rows manually, delete rows with ✕
-- Named setups **auto-load on next launch**
+### 📊 Uptime / Downtime History (Survives Restarts)
+Per IP address, the app tracks and saves:
+
+| Column | What it shows |
+|--------|--------------|
+| **Since** | Date & time the current status started |
+| **Duration** | How long in current state (`3d 04:12:07` for days) |
+| **Last Online** | Last time the device responded |
+| **Last Offline** | Last time the device stopped responding |
+
+History is written to disk every 10 seconds and **survives app restarts**.
+
+### ✏️ Edit Inline, No Spreadsheet Needed
+- Click any **Site** or **IP** cell to edit it directly in the table
+- **Ctrl+S** or the **Save setup** button saves the current list as a named profile
+- Named profiles **auto-load on next launch** — open the app and your list is already there
+- Add rows manually for devices not in the original sheet
+- Delete any row with the ✕ button
 
 ### 📤 Export to CSV or Excel
-- Export the full table with Status, Latency, Duration, Last Online, Last Offline
-- Timestamped filename (e.g., `MySetup_status_20260706_1900.xlsx`)
-- Open in Excel or import into your SCADA/report system
+Export the full live table at any time:
+- **Export CSV** — open in any spreadsheet or import into SCADA/reports
+- **Export Excel** — formatted `.xlsx` with bold headers
+- Filename is timestamped: `MySetup_status_20260706_1900.xlsx`
+
+Exported columns: Site Name, IP Address, Status, Latency (ms), Status Since, Duration, Last Online, Last Offline, Last Checked.
 
 ### 🔍 Filter & Search
-- Filter by site name or IP address (text search)
+- Text search by site name or IP address
 - Quick filter: **All / Online only / Offline only**
-- Instantly see which sites are down without scrolling
+- Counters always visible: Online: 114 · Offline: 102 · Total: 216
 
 ### 🔁 Background Monitoring Toggle
-- Keep pinging in the background while the window is minimized
-- Pause monitoring without closing the app
+- Keep the app monitoring even when the browser tab is minimized
+- Toggle ON/OFF without closing the app
 - Setting is remembered across restarts
 
-### ⚙️ Fully Adjustable
-| Setting | Default | What it does |
-|---|---|---|
+### ⚙️ Configurable Ping Settings
+
+| Setting | Default | Description |
+|---------|---------|-------------|
 | Interval | 6s | How often all IPs are re-pinged |
-| Timeout | 2000ms | Per-host ping wait (raise for VPN/WAN) |
+| Timeout | 2000ms | Per-host timeout (increase for VPN/WAN) |
 | Parallel | 20 | Simultaneous pings (max 60) |
-| Retries | 1 | Re-ping before marking DOWN |
+| Retries | 1 | Re-pings before marking DOWN |
 
 ### 🔐 Login & User Management
-- Simple login screen (email + password)
-- Admin account pre-set — sign in immediately
-- Admin panel: view all registered users, disable or delete accounts
-- Passwords are hashed (PBKDF2 + salt)
+- Login screen on first launch (email + password)
+- Admin account works immediately — no setup needed
+- **Admin panel**: view all registered users, disable or delete accounts
+- Passwords stored as PBKDF2+salt hash (not plain text)
 
 ---
 
 ## Who Is This For?
 
 | Role | Use case |
-|---|---|
+|------|----------|
 | **Automation / SCADA Engineer** | Monitor PLCs, HMIs, energy meters across plant subnets via WireGuard VPN |
-| **Network Engineer** | Bulk ping all devices in a subnet, track uptime history |
-| **IT Administrator** | Monitor servers, printers, cameras — upload your asset list CSV |
-| **Field Engineer** | Carry the exe on a USB, run it on any site PC with no install |
-| **Water / Power / Utilities** | Watch IoT gateways and meters across multiple remote sites |
-
----
-
-## Compared to Other Tools
-
-| Feature | Max Ping Test | PingInfoView | vmPing | Angry IP Scanner |
-|---|---|---|---|---|
-| Upload CSV/Excel IP list | ✅ Any format | ❌ Manual entry | ❌ Manual | ❌ IP range only |
-| Uptime/downtime history | ✅ With timestamps | ⚠️ Count only | ❌ | ❌ |
-| Real TTL-based detection | ✅ | ✅ | ✅ | ✅ |
-| Export to Excel | ✅ | ✅ CSV | ❌ | ✅ |
-| Site Name grouping | ✅ Auto-detect | ❌ | ❌ | ❌ |
-| Named setups / profiles | ✅ | ❌ | ❌ | ❌ |
-| Single exe, no install | ✅ | ✅ | ❌ .NET | ✅ |
-| Industrial / SCADA focus | ✅ | ❌ | ❌ | ❌ |
-
----
-
-## Use Case: Industrial Multi-Site Monitoring
-
-Max Ping Test was built for a real industrial deployment with:
-- **215 devices** across **12+ sites** (energy meters, IoT gateways, PLCs, HMIs)
-- Sites on separate subnets connected via **WireGuard VPN** over **Teltonika RUTX50 / RUT200** routers
-- Devices on **192.168.25.x, .28.x, .29.x, .31.x, .32.x, .33.x, .34.x** — all in one CSV
-- Required detecting true offline vs. "router unreachable" (TTL fix)
-- Export report emailed to site supervisor weekly
-
-If your setup looks like this, Max Ping Test was made for you.
+| **Network Engineer** | Bulk ping all devices in a site, track uptime over days |
+| **IT Administrator** | Monitor servers, cameras, printers — upload your asset list CSV |
+| **Field Engineer** | Copy exe to a USB stick, run on any site PC with no install |
+| **Water / Utilities / Power** | Watch IoT gateways and meters across dozens of remote sites |
 
 ---
 
 ## How It Works
 
 ```
-Double-click exe
-      ↓
-App starts a local web server (no internet required)
-      ↓
-Browser opens → Login screen
-      ↓
-Upload CSV / Excel with your IP addresses
-      ↓
-App auto-detects all IPs + Site Names from the sheet
-      ↓
-Pings all IPs in parallel every N seconds (real ICMP)
-      ↓
-Live table: 🟢 UP (with real latency) | 🔴 DOWN
-      ↓
-History tracked: since when, how long, last seen
-      ↓
-Export to CSV / Excel anytime
+Double-click  Max Ping Test.exe
+        ↓
+App starts a local server (no internet required)
+        ↓
+Browser opens  →  Login screen
+        ↓
+Upload your CSV / Excel IP list
+        ↓
+App scans every cell → finds all IPs + Site Names automatically
+        ↓
+Pings all IPs in parallel every N seconds (real ICMP with TTL check)
+        ↓
+Live table:  🟢 UP (real latency)  |  🔴 DOWN
+        ↓
+History recorded: since when, how long, last seen online/offline
+        ↓
+Export to CSV or Excel anytime
 ```
 
-**No internet connection required.** Everything runs locally on your PC.
+**No internet connection required. Everything runs locally on your PC.**
+
+---
+
+## Compared to Similar Tools
+
+| Feature | **Max Ping Test** | PingInfoView | vmPing | Angry IP |
+|---------|:-----------------:|:------------:|:------:|:--------:|
+| Upload CSV / Excel IP list | ✅ Any format | ❌ Manual | ❌ Manual | ❌ Range only |
+| Auto-detect Site Names | ✅ | ❌ | ❌ | ❌ |
+| Real TTL-based detection | ✅ | ✅ | ✅ | ✅ |
+| Uptime/downtime history | ✅ With timestamps | ⚠️ Count only | ❌ | ❌ |
+| Duration in days | ✅ `3d 04:12:07` | ❌ | ❌ | ❌ |
+| Export to Excel (.xlsx) | ✅ | ❌ CSV only | ❌ | ✅ |
+| Named profiles / setups | ✅ Auto-load | ❌ | ❌ | ❌ |
+| Single exe, zero install | ✅ | ✅ | ❌ .NET | ✅ |
+| SCADA / industrial focus | ✅ | ❌ | ❌ | ❌ |
+| Login / user management | ✅ | ❌ | ❌ | ❌ |
 
 ---
 
 ## System Requirements
 
-- Windows 10 or Windows 11 (64-bit)
-- Any modern browser (Chrome, Edge, Firefox) — opens automatically
+- **Windows 10 or 11** (64-bit)
+- Any browser: Chrome, Edge, Firefox (opens automatically)
 - Network access to the devices you want to ping
-- **No Python. No .NET. No other software.**
+- **No Python, no .NET, no WebView2, no other software**
 
 ---
 
 ## FAQ
 
-**Q: The app shows everything as DOWN. Why?**
-Your PC can only reach devices that are routable from your current network. If you're monitoring devices on other subnets (e.g., 192.168.29.x from your 192.168.31.x PC), you need your VPN/gateway routing to be active. Test with `ping 192.168.29.36` in Command Prompt first. If that times out, it's a routing issue, not the app.
+**Q: Everything shows as DOWN. Why?**  
+Your PC can only ping devices that are routable from your network. If devices are on other subnets (e.g., 192.168.29.x from a 192.168.31.x PC), your VPN or gateway routing must be active. Test manually in Command Prompt first: `ping 192.168.29.36`. If that times out, it's a routing issue, not this app.
 
-**Q: Does it need an internet connection?**
-No. Everything runs locally. The browser just displays the app from your local PC.
+**Q: Does it need an internet connection?**  
+No. Everything runs locally. The browser just displays the app served from your own PC.
 
-**Q: Can I run it on a server or leave it running overnight?**
-Yes. Minimize the window and leave it running. The monitoring toggle keeps it active. History is saved to disk every 10 seconds.
+**Q: Can I monitor 200+ devices?**  
+Yes. Tested with 215+ IPs across 12 sites. Keep Parallel at 15–20 and Timeout at 2000ms for best results on large lists.
 
-**Q: Can I monitor devices over WireGuard / OpenVPN?**
-Yes. As long as the VPN tunnel is up and the devices are routable from your PC, it pings them normally. Raise the Timeout setting to 2000–3000ms for VPN targets.
+**Q: Does it work over WireGuard / OpenVPN?**  
+Yes. As long as the VPN tunnel is active and the devices are reachable. Raise Timeout to 2000–3000ms for VPN targets.
 
-**Q: Why does it open in a browser instead of its own window?**
-This is what makes it a **single exe with zero dependencies**. A native window requires WebView2 runtime or .NET to be pre-installed — which breaks on many site PCs. The browser is always available.
+**Q: Can I use Google Sheets?**  
+Yes. File → Download → Comma-separated values (.csv), then upload that file.
 
-**Q: Can I use this with Google Sheets?**
-Yes. In Google Sheets: **File → Download → Comma-separated values (.csv)** — then upload that file.
+**Q: Why does it open in a browser instead of its own window?**  
+Browser-based UI = **zero dependencies**. A native window requires WebView2 or .NET pre-installed, which is not available on many industrial site PCs. The browser approach makes the single exe work everywhere reliably.
 
-**Q: Is the source code available?**
-The application is distributed as a compiled Windows executable. Source is not publicly available to protect the implementation.
+**Q: Can I leave it running overnight?**  
+Yes. Minimize the window. It keeps monitoring in the background. History is auto-saved every 10 seconds.
+
+**Q: Is the source code available?**  
+The app is distributed as a compiled Windows executable. Source code is not publicly available.
 
 ---
 
 ## Release Notes
 
 ### v1.0.0
-- Bulk IP ping from CSV / Excel upload (any messy format)
-- Real TTL-based ICMP detection (no false results)
+- Bulk IP ping from CSV / Excel — any messy real-world format
+- Real TTL-based ICMP detection (no false positives from router replies)
 - Live green/red status table with real latency
-- Uptime/downtime history with timestamps and duration in days
-- Online/Offline filter + text search
-- Inline edit (Site, IP), add rows, delete rows
-- Named setups with auto-load on launch (Ctrl+S to save)
-- Export to CSV and Excel with full history columns
-- Background monitoring toggle
-- Login screen with admin panel (user management)
-- Single standalone exe — no install, no dependencies
+- Uptime / downtime history with full timestamps and day-level duration
+- Online / Offline filter + text search
+- Inline edit (Site, IP), add rows, delete rows  
+- Named setups with auto-load on launch · Ctrl+S to save
+- Export to CSV and Excel with all history columns, timestamped filename
+- Background monitoring toggle (persists across restarts)
+- Login screen with admin panel (enable/disable/delete users)
+- Single standalone exe — no install, no Python, no dependencies
 
 ---
 
-## Keywords
+## Topics / Keywords
 
-`bulk ip ping` · `ip ping tester` · `ip ping monitor` · `mass ping tool` · `bulk ping windows` · `network ip checker` · `multi ip ping` · `ping multiple hosts` · `ping from csv` · `ping from excel` · `industrial network monitor` · `scada ping monitor` · `plc ip monitor` · `energy meter monitor` · `iot device monitor` · `hmi ping test` · `uptime monitor windows` · `ip availability monitor` · `network device monitor` · `ping status dashboard` · `bulk icmp ping` · `ping history windows` · `site ip monitor` · `offline detector` · `lan monitor windows free`
-
----
-
-## License
-
-Free to use. Executable distributed for personal and commercial use.
-Not open source — source code is not included.
-
----
-
-## Author
-
-**Mahesh Parmar (Max)**
-Automation & Site Engineer | Lariox Technologies | Surat, Gujarat, India
-GitHub: [@maheshmaximusmax](https://github.com/maheshmaximusmax)
+`bulk-ip-ping` · `ip-ping-tester` · `ping-monitor` · `mass-ping` · `bulk-ping` · `network-monitor` · `ip-monitor` · `ping-tester` · `multi-ping` · `icmp-ping` · `uptime-monitor` · `downtime-tracker` · `scada-monitor` · `plc-monitor` · `energy-meter` · `industrial-network` · `iot-monitor` · `hmi-ping` · `ping-from-csv` · `ping-from-excel` · `windows-ping-tool` · `site-monitor` · `lan-monitor` · `ip-checker` · `network-dashboard`
 
 ---
 
 <div align="center">
 
-⭐ **If this tool saved you time, give it a star — it helps others find it.** ⭐
+**Made by [Mahesh Parmar (Max)](https://github.com/maheshmaximusmax)**  
+Automation & Site Engineer · Lariox Technologies · Surat, Gujarat, India
 
-[Download Latest Release](https://github.com/maheshmaximusmax/max-ping-test/releases/latest)
+---
+
+⭐ **Found this useful? Star the repo — it helps others find it.** ⭐
+
+[⬇️ Download Latest Release](https://github.com/maheshmaximusmax/max-ping-test/releases/latest)
 
 </div>
