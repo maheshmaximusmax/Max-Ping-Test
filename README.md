@@ -29,6 +29,9 @@ One `.exe` file. No Python. No install. Works on any Windows PC.
 ### Live Dashboard — 114 Online · 102 Offline · 216 Devices · Real-time
 ![Dashboard](assets/screenshot-dashboard.png)
 
+<img width="1672" height="941" alt="ChatGPT Image Jul 6, 2026, 08_12_32 PM" src="https://github.com/user-attachments/assets/e7f8c97a-e482-4c02-9bea-a6b063b80ab1" />
+![Uploading ChatGPT Image Jul 6, 2026, 08_12_32 PM.png…]()
+
 ---
 
 ## What Is Max Ping Test?
